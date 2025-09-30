@@ -1,5 +1,6 @@
 import React from 'react';
 import { Github, Linkedin, Mail, Download } from 'lucide-react';
+import cvFile from '../assets/Hv Jorge Serrato.pdf'; 
 
 const Hero = () => {
   return (
@@ -17,11 +18,16 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-            <button className="bg-indigo-500 text-white px-8 py-3 rounded-full hover:bg-indigo-600 transition-colors font-medium flex items-center gap-2">
-
+            <button className="bg-indigo-500 text-white px-1  rounded-full hover:bg-indigo-600 transition-colors font-medium flex items-center gap-2">
+            <a 
+              href={cvFile}
+              download="Hv Jorge Serrato.pdf"
+              className="bg-indigo-500 text-white px-8 py-3 rounded-full hover:bg-indigo-600 transition-colors font-medium flex items-center gap-2">
               <Download size={20} />
               Descargar CV
+             </a>
             </button>
+           
             <button 
               onClick={() => document.getElementById('contacto').scrollIntoView({ behavior: 'smooth' })}
               className="border-2 border-indigo-500 text-indigo-500 px-8 py-3 rounded-full hover:bg-indigo-600 hover:text-white transition-colors font-medium"
