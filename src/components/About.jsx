@@ -26,14 +26,14 @@ const About = () => {
             </h3>
             <div className="space-y-4 text-gray-600">
               <p>
-                Soy un desarrollador frontend apasionado con más de 3 años de experiencia 
+                Soy un desarrollador frontend apasionado con más de 2 años de experiencia 
                 creando aplicaciones web modernas y funcionales. Mi enfoque se centra en 
                 combinar código limpio con diseños atractivos.
               </p>
               <p>
                 Me especializo en React y el ecosistema de JavaScript, pero siempre estoy 
                 aprendiendo nuevas tecnologías. Creo firmemente que el mejor código es aquel 
-                que es simple, mantenible y centrado en el usuario.
+                que es simple, mantenible y amigable con en el usuario.
               </p>
               <p>
                 Cuando no estoy programando, me gusta explorar nuevas tendencias de diseño, 
