@@ -21,7 +21,8 @@ const Hero = () => {
             <button className="bg-indigo-500 text-white px-1  rounded-full hover:bg-indigo-600 transition-colors font-medium flex items-center gap-2">
             <a 
               href={cvFile}
-              download="Hv Jorge Serrato.pdf"
+              target='_blank'
+              // download="Hv Jorge Serrato.pdf"
               className="bg-indigo-500 text-white px-8 py-3 rounded-full hover:bg-indigo-600 transition-colors font-medium flex items-center gap-2">
               <Download size={20} />
               Descargar CV

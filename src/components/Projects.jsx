@@ -9,7 +9,7 @@ const Projects = () => {
       id: 1,
       title: "Cacao de Serrato",
       description:
-        "Pagina web diseñada con tecnologias modernas, responsive, amigable con el usurio, con accesibilidad y mejoras en el SEO",
+        "Pagina web para la venta de café y cacao diseñada con tecnologias modernas, responsive, amigable con el usurio, con accesibilidad y mejoras en el SEO",
       image: cacao_serrato,
       technologies: ["React", "Tailwindcss"],
       liveUrl: "https://cacao-serrato.vercel.app/",
@@ -50,11 +50,11 @@ const Projects = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
           {projects.map((project) => (
             <div
               key={project.id}
-              className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow group"
+              className="flex flex-col h-full bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow group"
             >
               <div className="relative overflow-hidden">
                 <img
@@ -84,26 +84,31 @@ const Projects = () => {
                 </div>
               </div>
 
-              <div className="p-6">
+              <div className="p-6 flex flex-col flex-1">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
                   {project.title}
                 </h3>
-                <p className="text-gray-600 mb-4 text-sm leading-relaxed">
-                  {project.description}
-                </p>
-
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {project.technologies.map((tech, index) => (
-                    <span
-                      key={index}
-                      className="bg-blue-100 text-indigo-700 text-xs px-2 py-1 rounded-full"
-                    >
-                      {tech}
-                    </span>
-                  ))}
+                <div className="flex-1">
+                  <p className="text-gray-600 mb-4 text-sm leading-relaxed">
+                    {project.description}
+                  </p>
                 </div>
 
-                <div className="flex space-x-4">
+                {project.technologies?.length > 0 && (
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {project.technologies.map((tech, index) => (
+                      <span
+                        key={index}
+                        className="bg-blue-100 text-indigo-700 text-xs px-2 py-1 rounded-full"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                )}
+
+                <div className="mt-auto pt-4 border-t border-gray-100 flex items-center justify-between">
+                  <div className="flex space-x-4">
                   <a
                     href={project.liveUrl}
                     target="_blank"
@@ -122,6 +127,8 @@ const Projects = () => {
                     <Github size={16} className="mr-1" />
                     Código
                   </a>
+                  </div>
+                  <span className="text-xs text-green-600">{project.liveUrl !== '#' ? 'En línea' : ''}</span>
                 </div>
               </div>
             </div>

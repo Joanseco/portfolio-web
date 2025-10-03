@@ -1,12 +1,12 @@
 import React from 'react';
-import { Code, Palette, Smartphone, Globe } from 'lucide-react';
+import { Code, Palette, Database, Globe } from 'lucide-react';
 
 const About = () => {
   const skills = [
-    { name: 'Frontend', icon: Code, items: ['React', 'JavaScript', 'TypeScript', 'HTML5', 'CSS3'] },
-    { name: 'Diseño', icon: Palette, items: ['Tailwind CSS', 'Figma', 'Canva'] },
-    { name: 'Mobile', icon: Smartphone, items: ['React Native', 'Responsive Design', 'PWA'] },
-    { name: 'Herramientas', icon: Globe, items: ['Git', 'Node.js', 'Vite', 'Webpack'] }
+    { name: 'Frontend', icon: Code, items: ['React', 'JavaScript (ES6+)', 'Consumo de APIs (Axios / Fetch)', 'Next.js'] },
+    { name: 'Diseño', icon: Palette, items: ['Tailwind CSS', 'Diseño Responsivo', 'Principios de UI/UX'] },
+    { name: 'Backend', icon: Database, items: ['NodeJs', 'ExpressJs', 'Bases de Datos SQL (PostgreSQL / MySQL)', 'Bases de Datos NoSQL (MongoDB)'] },
+    { name: 'Herramientas', icon: Globe, items: ['Git', 'GitHub', 'Vite', 'VS Code', 'Vercel'] }
   ];
 
   return (
@@ -26,18 +26,13 @@ const About = () => {
             </h3>
             <div className="space-y-4 text-gray-600">
               <p>
-                Soy un desarrollador frontend apasionado con más de 2 años de experiencia 
-                creando aplicaciones web modernas y funcionales. Mi enfoque se centra en 
-                combinar código limpio con diseños atractivos.
+                Soy un desarrollador web fullstack con más de 2 años de experiencia creando aplicaciones web modernas y funcionales. Mi enfoque se centra en combinar código limpio con diseños atractivos.
               </p>
               <p>
-                Me especializo en React y el ecosistema de JavaScript, pero siempre estoy 
-                aprendiendo nuevas tecnologías. Creo firmemente que el mejor código es aquel 
-                que es simple, mantenible y amigable con en el usuario.
+                Me especializo en React, Nodejs y el ecosistema de JavaScript, pero siempre estoy aprendiendo nuevas tecnologías.
               </p>
               <p>
-                Cuando no estoy programando, me gusta explorar nuevas tendencias de diseño, 
-                aprender mejor usos de las IA's y compartir conocimientos con la comunidad.
+                Cuando no estoy programando, me gusta explorar nuevas tendencias de diseño, aprender mejores usos de las IA's y compartir conocimientos con la comunidad.
               </p>
             </div>
           </div>
